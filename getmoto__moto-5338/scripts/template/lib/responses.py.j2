@@ -1,0 +1,20 @@
+"""Handles incoming {{ escaped_service }} requests, invokes methods, returns responses."""
+import json
+
+from moto.core.responses import BaseResponse
+from .models import {{ escaped_service }}_backends
+
+
+class {{ service_class }}Response(BaseResponse):
+    """Handler for {{ service_class }} requests and responses."""
+
+    @property
+    def {{ escaped_service }}_backend(self):
+        """Return backend instance specific for this region."""
+        return {{ escaped_service }}_backends[self.region]
+
+    # add methods from here
+
+
+# add templates from here
+
