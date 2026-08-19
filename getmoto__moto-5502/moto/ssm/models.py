@@ -612,6 +612,7 @@ class Command(BaseModel):
         self.error_count = 0
         self.completed_count = len(instance_ids)
         self.target_count = len(instance_ids)
+        self.delivery_timed_out_count = 0
 
         # Create invocations with a single run command plugin.
         self.invocations = []
@@ -651,6 +652,7 @@ class Command(BaseModel):
             "Status": self.status,
             "StatusDetails": self.status_details,
             "TargetCount": self.target_count,
+            "DeliveryTimedOutCount": self.delivery_timed_out_count,
             "Targets": self.targets,
         }
 
