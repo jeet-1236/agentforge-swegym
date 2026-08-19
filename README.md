@@ -11,6 +11,7 @@ patch (`scripts/swegym_grade.py`).
 | problem | upstream | commit |
 |---|---|---|
 | `conan-io__conan-15699` | conan-io/conan | `96a7a69408` |
+| `facebookresearch__hydra-1915` | facebookresearch/hydra | `e471ff5776` |
 | `getmoto__moto-5338` | getmoto/moto | `ea15ba6418` |
 | `getmoto__moto-5502` | getmoto/moto | `bd48bff981` |
 
