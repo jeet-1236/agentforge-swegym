@@ -10,6 +10,7 @@ patch (`scripts/swegym_grade.py`).
 
 | problem | upstream | commit |
 |---|---|---|
+| `conan-io__conan-14378` | conan-io/conan | `8bbd78489d` |
 | `conan-io__conan-15699` | conan-io/conan | `96a7a69408` |
 | `facebookresearch__hydra-1915` | facebookresearch/hydra | `e471ff5776` |
 | `facebookresearch__hydra-2290` | facebookresearch/hydra | `34f70684fe` |
