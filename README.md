@@ -16,5 +16,6 @@ patch (`scripts/swegym_grade.py`).
 | `facebookresearch__hydra-2290` | facebookresearch/hydra | `34f70684fe` |
 | `getmoto__moto-5338` | getmoto/moto | `ea15ba6418` |
 | `getmoto__moto-5502` | getmoto/moto | `bd48bff981` |
+| `getmoto__moto-7646` | getmoto/moto | `8f42c2b17c` |
 
 Each fix appears as a pull request against this repository, inside its own folder.
