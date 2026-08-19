@@ -74,7 +74,13 @@ class ConanFile:
     runenv_info = None
     conf_info = None
 
-    def __init__(self, display_name=""):
+    def __init__(self, display_name="", **kwargs):
+        """
+        Initialize the ConanFile.
+
+        ``display_name`` is kept for backward compatibility, while ``**kwargs`` allows
+        passing additional arguments (e.g., ``build_folder``) without raising a ``TypeError``.
+        """
         self.display_name = display_name
         # something that can run commands, as os.sytem
 
