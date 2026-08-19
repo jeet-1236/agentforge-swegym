@@ -133,7 +133,8 @@ def _resolve_target(
         try:
             target = _locate(target)
         except Exception as e:
-            msg = f"Error locating target '{target}', see chained exception above."
+            # Include the original exception details in the message.
+            msg = f"Error locating target '{target}': {repr(e)}. See chained exception above."
             if full_key:
                 msg += f"\nfull_key: {full_key}"
             raise InstantiationException(msg) from e
